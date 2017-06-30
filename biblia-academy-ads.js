@@ -42,12 +42,12 @@
             var css_link = $("<link>", { 
                 rel: "stylesheet", 
                 type: "text/css", 
-                href: "https://gospelprime.com.br/wp-content/themes/gospelprime/ads/ba-ads-style.css" 
+                href: "https://www.bibliaacademy.com.br/wp-content/plugins/baoola/ba-ads-style.css" 
             });
             css_link.appendTo('head');          
 
             /******* Load HTML *******/
-            var jsonp_url = "https://gospelprime.com.br/wp-content/themes/gospelprime/ads/ba-ads-json.php?callback=123?";
+            var jsonp_url = "https://gospelprime.com.br/wp-content/plugins/baoola/ba-ads-json.php?callback=123?";
             $.getJSON(jsonp_url, function(data) {
               $('#ba-ads').html(data.html);
             });
