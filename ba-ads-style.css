@@ -1,0 +1,148 @@
+/*		  
+Olá mundo! 
+Este CSS foi criado pela designer Dani Guerrato como demo de um artigo do Tableless.
+
+Web:       www.tableless.com.br
+E-mail:    dani@popupdesign.com.br
+
+Divirta-se! :)
+*/
+
+/* ==========================================================================
+   Normatização CSS
+   ========================================================================== */
+
+
+
+.ba-ads-container a {
+    text-decoration: none;
+    color: #4A4A4A;
+}
+
+.ba-ads-container a:hover {
+    text-decoration: underline;
+}
+
+
+/* ==|== Estilos Principais ================================================== */
+
+.ba-ads-container {
+    max-width: 1138px;
+    margin: 0 auto;
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;  
+    color: #444;
+}
+
+.ba-ads-container img,
+picture,
+video,
+embed {
+    max-width: 100%;
+}
+
+.ba-ads-container h1  {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 4em;
+    font-weight: 200;
+    color: #FFF;
+}
+
+.ba-ads-foto {
+    margin: 0px;
+    padding: 0px;
+}
+
+.ba-ads-coluna {
+    width: 22.504255319149%; /* 264px / 1128px */
+    float: left;
+    margin-right: 2.127659574468%; /* 24 / 1128px */
+}
+
+.coluna:last-child {
+    margin-right: 0;
+}
+
+.ba-ads-container h2 {
+    font-size: 2.0em;
+    font-weight: bold;
+}
+
+.ba-ads-container p {
+    font-size: 1.6em;
+}
+
+.ba-ads-container small {
+  color:#ABADAD;
+  font-size: 11px;
+  margin-right: 10px; 
+}
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+
+@media screen and (max-width: 1128px) {
+
+    .ba-ads-container {
+        padding: 0 2.4em 0 2.4em;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .ba-ads-coluna {
+        width: 48%;
+        margin-bottom: 2.4em;
+        margin-right: 2%;
+    }
+
+    .ba-ads-coluna:nth-child(even) {
+       margin-right: 0;
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+
+    .ba-ads-coluna {
+        width: 100%;
+        margin-right: 0;
+    }
+
+}
+
+.ba-ads-clearfix:before,
+.ba-ads-clearfix:after {
+    content: " "; 
+    display: table; 
+}
+
+.ba-ads-clearfix:after {
+    clear: both;
+}
+
+.ba-ads-clearfix {
+    *zoom: 1;
+}
+
+.ba-heading {
+    border-bottom: 1px solid #fcab0e;
+    padding-bottom: 9px;
+    position: relative;
+    color: #4A4A4A;
+    padding-left: 7px;  
+}
+
+.ba-logo  {
+  color:#ABADAD;
+  float: right;
+  font-size: 11px;
+  margin-right: 10px;  
+  text-align: right;
+}
