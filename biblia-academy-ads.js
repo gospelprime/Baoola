@@ -38,19 +38,28 @@
     /******** Our main function ********/
     function main() { 
         jQuery(document).ready(function($) { 
+
+            var versao = '1.0.0';
+
             /******* Load CSS *******/
             var css_link = $("<link>", { 
                 rel: "stylesheet", 
                 type: "text/css", 
-                href: "https://gospelprime.com.br/wp-content/themes/gospelprime/ads/ba-ads-style.css" 
+                href: "https://baoola.bibliaacademy.com.br/wp-content/plugins/baoola/ba-ads-style.css?"+versao 
             });
             css_link.appendTo('head');          
 
             /******* Load HTML *******/
-            var jsonp_url = "https://gospelprime.com.br/wp-content/themes/gospelprime/ads/ba-ads-json.php?callback=123?";
-            $.getJSON(jsonp_url, function(data) {
-              $('#ba-ads').html(data.html);
+            var jsonp_url = "https://baoola.bibliaacademy.com.br/wp-content/plugins/baoola/ba-ads-json.php?cache="+versao+"&callback=?";
+
+            $.getJSON(jsonp_url,produtos,function(data){
+                $('#ba-ads').html(data.html);
             });
+
+
+           /* $.getJSON(jsonp_url, function(data) {
+              $('#ba-ads').html(data.html);
+            });*/
         });
     }
 
